@@ -11,7 +11,7 @@ initPDFViewer = () => {
       console.log(page);
       let pdfCanvas = document.createElement("canvas");
       let context = pdfCanvas.getContext("2d");
-      let pageViewPort = page.getViewport({scale:1});
+      let pageViewPort = page.getViewport({scale:2});
       console.log(pageViewPort);
 
       pdfCanvas.width = pageViewPort.width;
