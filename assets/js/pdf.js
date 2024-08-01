@@ -3,7 +3,7 @@ initPDFViewer = () => {
 
   $("#pdfViewerDiv").html("");
 
-  pdfjsLib.getDocument("https://k-fe-lpz.github.io/kfe/menu_2.pdf").promise.then((pdfDoc) => {
+  pdfjsLib.getDocument("https://k-fe-lpz.github.io/kfe/menu_3.pdf").promise.then((pdfDoc) => {
     let pages = pdfDoc._pdfInfo.numPages;
 
     for(let i = 1; i <= pages; i ++){
